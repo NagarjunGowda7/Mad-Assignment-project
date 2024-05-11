@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/mad4"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:background="@drawable/custom_edittext"
+        android:drawablePadding="8dp"
+        android:padding="8dp"
+        android:textColorHighlight="@color/cardview_dark_background"
+        android:layout_marginTop="130dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_edittext"
+        android:drawablePadding="8dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/cardview_dark_background" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/purple"
+        android:textSize="18sp"
+        app:cornerRadius="20dp"/>
+
+    <TextView
+        android:id="@+id/tvPasswordMismatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Password Mismatch"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:clickable="true"
+        android:padding="8dp"
+        android:text="Not Yet registered? SignUp Now"
+        android:textAlignment="center"
+        android:textColor="@color/purple"
+        android:textSize="14sp"/>
+    <TextView
+        android:id="@+id/tvForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:clickable="true"
+        android:padding="8dp"
+        android:text="Forgot Password?"
+        android:textAlignment="center"
+        android:textColor="@color/purple"
+        android:textSize="14sp"/>
+
+
+</LinearLayout>
